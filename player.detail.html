@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About Us - Brutal Asf</title>
+  <link rel="stylesheet" href="brutal asf.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.us.html">About Us</a></li>
+        <li><a href="player.detail.html">Player Details</a></li>
+        <li><a href="recruitment.html">Recruitment</a></li>
+        <li><a href="benefits.html">Benefits</a></li>
+        <li><a href="ownership.html">Ownership</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  < <section id="player-details">
+  <div class="container">
+    <h2>Player Details</h2>
+    <div class="card-container">
+
+      <div class="card">
+        <h3>Suman Dangi <span>(Sanju Asf)</span></h3>
+        <p><strong>Role:</strong> Sniper & IGL</p>
+        <p><strong>UID:</strong> *********</p>
+        <p><strong>Email:</strong> —</p>
+        <p><strong>Contact:</strong> —</p>
+        <p class="about-player">
+          Sanju Asf popularly known for his excellent leadership skills leading team to victory most of the time and a very well experienced sniper with pin point precicsion is a gem of Brutal Asf.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Sochan Dhungana <span>(Sochu Asf)</span></h3>
+        <p><strong>Role:</strong> Rusher</p>
+        <p><strong>UID:</strong> ********</p>
+        <p><strong>Email:</strong> sochudhungana@gmail.com</p>
+        <p><strong>Contact:</strong> +977-9765557066</p>
+        <p class="about-player">
+          Sochu Asf one of the best rushers there ever was is a underrated player that leads the rushers and supporters. He is popularly known for his insane cluthes and great firepower. He is one of the key factor for great firepower in team.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Jonish Tamang <span>(Jonish Asf)</span></h3>
+        <p><strong>Role:</strong> Supporter</p>
+        <p><strong>UID:</strong> ********</p>
+        <p><strong>Email:</strong> jonishofficial@gmail.com</p>
+        <p><strong>Contact:</strong> +977-9749473449</p>
+        <p class="about-player">
+          Jonish Asf is the backbone of the team he supports both rushers and snipers with his insane decision making and good supporting skills thankfully supports the team butifully with his healing and cover fire.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Aashish Shrestha <span>(Luis Asf)</span></h3>
+        <p><strong>Role:</strong> Rusher</p>
+        <p><strong>UID:</strong> *********</p>
+        <p><strong>Email:</strong> —</p>
+        <p><strong>Contact:</strong> —</p>
+        <p class="about-player">
+          Luis Asf is the secondary and primary rusher both of the team and a key factor of high firepower of team. He is never under pressure and popularly known for his quick reflex and great clutches as well as beautiful one taps. 
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>James Chhetri <span>(James Asf)</span></h3>
+        <p><strong>Role:</strong> Rusher</p>
+        <p><strong>UID:</strong> ********</p>
+        <p><strong>Email:</strong> —</p>
+        <p><strong>Contact:</strong> —</p>
+        <p class="about-player">
+          James Asf one of the best to ever touch this game has been a crucial factor in team for winning key matches and leading the team to acheive many achievements.He is one of the key factor brutal asf is such a strong team.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Ushan Khatri <span>(Delta Asf)</span></h3>
+        <p><strong>Role:</strong> Manager</p>
+        <p><strong>UID:</strong> ********</p>
+        <p><strong>Email:</strong> ushankhatri4002@gmail.com</p>
+        <p><strong>Contact:</strong> +977-9843885307</p>
+        <p class="about-player">
+          Delta Asf popularly known for his great height stands at 6'2 and as his high height he led our team to high levels providing essential services managing matches distributing tactics for individual players and also managing the matches along with providing salary to team with his fair judgement.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+  <footer>
+    
+    <div class="container">
+      <p>&copy; 2025 Brutal Asf. Created and designed by Sochan Dhungana[sochu].</p>
+    </div>
+  </footer>
+
+  <button id="topBtn" title="Back to top">↑</button>
+
+<button id="modeToggle">🌙 Dark Mode</button>
+
+<script>
+const topBtn = document.getElementById("topBtn");
+const modeToggle = document.getElementById("modeToggle");
+
+
+window.onscroll = function () {
+  topBtn.style.display = document.documentElement.scrollTop > 100 ? "block" : "none";
+};
+
+
+topBtn.onclick = function () {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
+
+let dark = true;
+modeToggle.onclick = function () {
+  dark = !dark;
+  document.body.style.backgroundColor = dark ? "#121212" : "#f4f4f4";
+  document.body.style.color = dark ? "#f0f0f0" : "#222";
+
+  const sections = document.querySelectorAll("section");
+  const header = document.querySelector("header");
+  const footer = document.querySelector("footer");
+  const links = document.querySelectorAll("nav a");
+
+  sections.forEach(sec => sec.style.backgroundColor = dark ? "#1e1e1e" : "#fff");
+  footer.style.backgroundColor = dark ? "#1f1f1f" : "#ddd";
+  footer.style.color = dark ? "#aaa" : "#222";
+  header.style.backgroundColor = dark ? "#1f1f1f" : "#eee";
+  header.style.color = dark ? "#ff4f4f" : "#222";
+  links.forEach(link => link.style.color = dark ? "#fff" : "#000");
+
+  modeToggle.innerText = dark ? "🌙 Dark Mode" : "☀️ Light Mode";
+};
+
+const sections = document.querySelectorAll('section');
+const navLinks = document.querySelectorAll('nav ul li a');
+
+window.addEventListener('scroll', () => {
+  let current = '';
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 60;
+    if (pageYOffset >= sectionTop) {
+      current = section.getAttribute('id');
+    }
+  });
+
+  navLinks.forEach(link => {
+    link.classList.remove('active');
+    if (link.getAttribute('href') === '#' + current) {
+      link.classList.add('active');
+    }
+  });
+});
+
+</script>
+</body>
+</html>
